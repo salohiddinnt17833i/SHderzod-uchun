@@ -11,7 +11,7 @@
 
 body {
     font-family: 'Montserrat';
-    
+
 }
 
 a {
@@ -61,13 +61,12 @@ ul {
     color: var(--hover-color);
 }
 
-.header__container .bar i
-{
+.header__container .bar i {
     font-size: 24px;
     display: none;
 }
-.header__container input
-{
+
+.header__container input {
     display: none;
 }
 
@@ -165,13 +164,44 @@ ul {
     background: rgb(146, 107, 255);
     background: linear-gradient(90deg, rgba(146, 107, 255, 1) 30%, rgba(0, 0, 0, 1) 75%);
 }
-.hero__container .img img
-{
+
+.hero__container .img img {
     max-width: 645px;
     width: 100%;
     min-width: 100px;
 }
 
+.number__container .block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 36px 100px;
+    border-radius: 24px;
+    border: 2px solid #F6FCFF;
+    background: var(--grey-200, #F3F5F8);
+
+    /* shadow */
+    box-shadow: 0px 4px 8px -1px rgba(7, 0, 28, 0.03), 0px 8px 16px -3px rgba(7, 0, 28, 0.03), 0px 16px 32px -6px rgba(7, 0, 28, 0.02);
+}
+
+.number__container .block .item:first-child {
+    max-width: 180px;
+}
+
+.number__container .block .item h2 {
+    color: #485064;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.number__container .block .line {
+    width: 2px;
+    height: 87px;
+    background-color: #D1C8FB;
+}
 
 
 
@@ -186,28 +216,27 @@ ul {
 
 
 @media screen and (max-width:1240px) {
-    .header
-    {
+    .header {
         padding: 30px;
     }
-    .hero__container
-    {
+
+    .hero__container {
         padding: 30px;
     }
 }
+
 @media screen and (max-width:1000px) {
-    .hero__container .title
-    {
+    .hero__container .title {
         margin-top: 10%;
-    }    
-    .hero__container .title h1
-    {
+    }
+
+    .hero__container .title h1 {
         font-size: 40px;
     }
 }
-@media screen and (max-width:900px){
-    .header__container ul
-    {
+
+@media screen and (max-width:900px) {
+    .header__container ul {
         width: 40%;
         height: 100%;
         position: absolute;
@@ -218,66 +247,57 @@ ul {
         padding-top: 100px;
         z-index: 100;
         transition: 0.5s;
-        background-image: url(../imgs/logo.svg),url(../imgs/globus.png);
+        background-image: url(../imgs/logo.svg), url(../imgs/globus.png);
         background-repeat: no-repeat;
         background-size: 60%, 10%;
         background-position: 30px 30px, right 20px top 40px;
         border-right: 1px solid #ccc;
     }
-    .header__container ul::after
-    {
+
+    .header__container ul::after {
         content: '@ Muallif Salohiddin';
         position: absolute;
         bottom: 20px;
     }
-    .header__container ul li 
-    {
+
+    .header__container ul li {
         margin-top: 40px;
     }
-    
-    .header__container .globus
-    {
+
+    .header__container .globus {
         display: none;
     }
-    .header__container .bar i
-    {
+
+    .header__container .bar i {
         display: block;
     }
-    .header__container #check:checked + ul
-    {
-        left: 0px;   
+
+    .header__container #check:checked+ul {
+        left: 0px;
     }
-    .hero__container .img img
-    {
+
+    .hero__container .img img {
         display: none;
     }
 }
-@media screen and (max-width:650px){
-    .hero__container
-    {
+
+@media screen and (max-width:650px) {
+    .hero__container {
         max-width: 650px;
         width: 100%;
         text-align: center;
     }
-    .hero__container .brends
-    {
+
+    .hero__container .brends {
         justify-content: center;
     }
-    .hero__container .title h1
-    {
+
+    .hero__container .title h1 {
         width: 100%;
     }
-    .hero__container .title p
-    {
+
+    .hero__container .title p {
         margin: 0px auto;
         margin-bottom: 40px;
     }
 }
-
-
-
-
-
-
-
-
